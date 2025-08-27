@@ -1,4 +1,4 @@
-import type { BaseEntity } from "@/types"
+import type { BaseEntity } from '@/types'
 
 export interface User extends BaseEntity {
   email: string
@@ -16,7 +16,7 @@ export interface User extends BaseEntity {
 }
 
 export interface UserPreferences {
-  theme: "light" | "dark" | "system"
+  theme: 'light' | 'dark' | 'system'
   language: string
   timezone: string
   notifications: NotificationPreferences
@@ -32,7 +32,7 @@ export interface NotificationPreferences {
 }
 
 export interface PrivacyPreferences {
-  profileVisibility: "public" | "private" | "friends"
+  profileVisibility: 'public' | 'private' | 'friends'
   showEmail: boolean
   showLocation: boolean
   allowIndexing: boolean
@@ -96,7 +96,7 @@ export interface UserActivity {
 }
 
 // User role and permission types
-export type UserRole = "admin" | "moderator" | "user" | "guest"
+export type UserRole = 'admin' | 'moderator' | 'user' | 'guest'
 
 export interface UserPermission {
   id: string
@@ -132,7 +132,7 @@ export interface UpdateUserInput {
 }
 
 export interface UpdateUserPreferencesInput {
-  theme?: "light" | "dark" | "system"
+  theme?: 'light' | 'dark' | 'system'
   language?: string
   timezone?: string
   notifications?: Partial<NotificationPreferences>

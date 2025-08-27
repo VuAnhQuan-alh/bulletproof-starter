@@ -1,5 +1,55 @@
 {
   "hero": {
     "title": "NextJS Boilerplate template"
+  },
+  "nav": {
+    "features": "Features",
+    "docs": "Docs",
+    "examples": "Examples"
+  },
+  "announcement": "Now with Next.js 15 & React 19 support",
+  "mainHeading": {
+    "part1": "Production-ready",
+    "part2": "development stack"
+  },
+  "subtitle": "A comprehensive Next.js boilerplate with authentication, database integration, testing, and modern tooling. Everything you need to ship your next project without the setup hassle.",
+  "cta": {
+    "startBuilding": "Start building for free",
+    "viewDocs": "View documentation"
+  },
+  "featureHighlight": "Developer experience first. Save weeks of setup time with ready-made features.",
+  "section": {
+    "title": "Everything you need to build modern web apps",
+    "description": "Skip the boilerplate setup and focus on building your product. This starter includes all the tools and patterns you need for production-ready applications."
+  },
+  "features": {
+    "auth": {
+      "title": "Authentication Ready",
+      "description": "Complete auth system with better auth integration. Social logins,"
+    },
+    "database": {
+      "title": "Type-Safe Database",
+      "description": "DrizzleORM with PostgreSQL support. Type-safe queries, migrations, and a beautiful database studio for development."
+    },
+    "testing": {
+      "title": "Testing Suite",
+      "description": "Comprehensive testing with Vitest for unit tests and Playwright for E2E. Coverage reports and CI/CD ready configurations."
+    },
+    "ui": {
+      "title": "Beautiful UI",
+      "description": "Shadcn/ui components with Tailwind CSS. Dark mode support, responsive design, and accessible components by default."
+    },
+    "devTools": {
+      "title": "Developer Tools",
+      "description": "ESLint, Prettier, Husky git hooks, TypeScript strict mode, and VS Code configurations for the best development experience."
+    },
+    "performance": {
+      "title": "Optimized Performance",
+      "description": "Built with Next.js 15 App Router, Server Components, and modern optimization techniques for lightning-fast performance."
+    }
+  },
+  "bottomCta": {
+    "text": "Ready to start building?",
+    "button": "Get started now"
   }
 }

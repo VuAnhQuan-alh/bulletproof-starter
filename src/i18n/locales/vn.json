@@ -1,0 +1,55 @@
+{
+  "hero": {
+    "title": "NextJS Boilerplate mẫu"
+  },
+  "nav": {
+    "features": "Tính năng",
+    "docs": "Tài liệu",
+    "examples": "Ví dụ"
+  },
+  "announcement": "Bây giờ với hỗ trợ Next.js 15 & React 19",
+  "mainHeading": {
+    "part1": "Sẵn sàng sản xuất",
+    "part2": "ngăn xếp phát triển"
+  },
+  "subtitle": "Một boilerplate Next.js toàn diện với xác thực, tích hợp cơ sở dữ liệu, kiểm thử và công cụ hiện đại. Tất cả những gì bạn cần để triển khai dự án tiếp theo của mình mà không gặp rắc rối thiết lập.",
+  "cta": {
+    "startBuilding": "Bắt đầu xây dựng miễn phí",
+    "viewDocs": "Xem tài liệu"
+  },
+  "featureHighlight": "Trải nghiệm nhà phát triển trước tiên. Tiết kiệm hàng tuần thời gian thiết lập với các tính năng sẵn sàng sử dụng.",
+  "section": {
+    "title": "Tất cả những gì bạn cần để xây dựng ứng dụng web hiện đại",
+    "description": "Bỏ qua thiết lập boilerplate và tập trung vào việc xây dựng sản phẩm của bạn. Starter này bao gồm tất cả các công cụ và pattern bạn cần cho các ứng dụng sẵn sàng sản xuất."
+  },
+  "features": {
+    "auth": {
+      "title": "Xác thực Sẵn sàng",
+      "description": "Hệ thống xác thực hoàn chỉnh với tích hợp better auth. Đăng nhập xã hội,"
+    },
+    "database": {
+      "title": "Cơ sở dữ liệu Type-Safe",
+      "description": "DrizzleORM với hỗ trợ PostgreSQL. Truy vấn type-safe, di chuyển và studio cơ sở dữ liệu đẹp cho phát triển."
+    },
+    "testing": {
+      "title": "Bộ kiểm thử",
+      "description": "Kiểm thử toàn diện với Vitest cho kiểm thử đơn vị và Playwright cho E2E. Báo cáo phạm vi và cấu hình CI/CD sẵn sàng."
+    },
+    "ui": {
+      "title": "Giao diện đẹp",
+      "description": "Thành phần Shadcn/ui với Tailwind CSS. Hỗ trợ chế độ tối, thiết kế đáp ứng và thành phần có thể truy cập theo mặc định."
+    },
+    "devTools": {
+      "title": "Công cụ phát triển",
+      "description": "ESLint, Prettier, Husky git hooks, chế độ nghiêm ngặt TypeScript và cấu hình VS Code cho trải nghiệm phát triển tốt nhất."
+    },
+    "performance": {
+      "title": "Hiệu suất được tối ưu hóa",
+      "description": "Được xây dựng với Next.js 15 App Router, Server Components và kỹ thuật tối ưu hóa hiện đại cho hiệu suất siêu nhanh."
+    }
+  },
+  "bottomCta": {
+    "text": "Sẵn sàng bắt đầu xây dựng?",
+    "button": "Bắt đầu ngay bây giờ"
+  }
+}

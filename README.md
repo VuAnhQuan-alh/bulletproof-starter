@@ -1,43 +1,50 @@
 # 🚀 Next.js Starter Template
 
 A production-ready Next.js boilerplate with modern tooling, comprehensive testing, and enterprise-grade features.
-### ⭐ **Star this repository if it helped you!** 
 
-> 💫 **Built with love by [Yeasin](https://github.com/yeasin2002)**  and other contributor
+### ⭐ **Star this repository if it helped you!**
 
-##### If you found  any issue or have any suggestion, please open an [issue](https://github.com/yeasin2002/nextjs-starter-template/issues) or a [pull request](https://github.com/yeasin2002/nextjs-starter-template/pulls).
+> 💫 **Built with love by [Yeasin](https://github.com/yeasin2002)** and other contributor
+
+##### If you found any issue or have any suggestion, please open an [issue](https://github.com/yeasin2002/nextjs-starter-template/issues) or a [pull request](https://github.com/yeasin2002/nextjs-starter-template/pulls).
 
 ##### Feel free to reach out to me on [Linkedin](https://www.linkedin.com/in/yeasin2002/) or [Gmail](mailto:mdkawsarislam2002@gmail.com) if you have any questions or feedback.
 
 ## ✨ Features
 
 ### 🏗️ **Core Framework**
+
 - ⚡ **Next.js 15** with App Router & Server Components
 - 🔷 **TypeScript 5.8** with strict configuration
 - ⚛️ **React 19** with latest features
 
 ### 🎨 **UI & Styling**
+
 - 🎯 **Tailwind CSS** with custom design system
 - 🧩 **shadcn/ui** components with Radix UI primitives
 - 🌙 **Dark mode** support with next-themes
 - 🎭 **Lucide React** icons
 
 ### 🗄️ **Database & ORM**
+
 - 🐘 **Drizzle ORM** with PostgreSQL support
 - 🌐 **Multi-provider** support (Neon, PlanetScale, Turso, Xata)
 - 🔄 **Database migrations** and seeding
 - 🎛️ **Drizzle Studio** for database management
 
 ### 🔐 **Authentication**
-- 👤 **better-auth** integration for auth  management
+
+- 👤 **better-auth** integration for auth management
 - 🔒 **Secure** authentication flows
 - 📧 **Email templates** with React Email
 
 ### 🌍 **Internationalization**
+
 - 🗣️ **next-intl** for i18n support
 - 🌐 **Locale routing** and translations
 
 ### 🧪 **Testing Suite**
+
 - ⚡ **Vitest** for unit testing with jsdom
 - 🎭 **Playwright** for E2E testing
 - 🧪 **Testing Library** for React components
@@ -45,6 +52,7 @@ A production-ready Next.js boilerplate with modern tooling, comprehensive testin
 - 📊 **Coverage reports** with v8
 
 ### 🔧 **Development Tools**
+
 - 🎯 **ESLint** with Next.js & TypeScript configs
 - 💅 **Prettier** with Tailwind plugin
 - 🔍 **Knip** for unused code detection
@@ -52,12 +60,15 @@ A production-ready Next.js boilerplate with modern tooling, comprehensive testin
 - 📦 **Bundle Analyzer** for optimization
 
 ### 🐳 **DevOps & Deployment**
+
 <!-- - 🐳 **Docker** with multi-stage builds -->
 <!-- - 🔄 **Docker Compose** for development/production -->
+
 - 🏥 **Health checks** and monitoring
 - 📈 **Performance monitoring** with React Scan
 
 ### 🛡️ **Security & Performance**
+
 - 🔒 **Security headers** configured
 <!-- - 🚀 **Standalone output** for Docker -->
 - 📊 **OpenTelemetry** integration
@@ -66,6 +77,7 @@ A production-ready Next.js boilerplate with modern tooling, comprehensive testin
 ## 🚀 Quick Start
 
 ### Prerequisites
+
 - Node.js 18+ or Bun
 - PostgreSQL database
 - Git
@@ -111,6 +123,7 @@ Visit [http://localhost:3000](http://localhost:3000) to see your application.
 ## 📜 Available Scripts
 
 ### 🔧 **Development**
+
 ```bash
 npm run setup        # Quick project setup
 npm run dev          # Start development server
@@ -121,6 +134,7 @@ npm run clean        # Clean build artifacts
 ```
 
 ### 🗄️ **Database**
+
 ```bash
 npm run db:generate  # Generate database migrations
 npm run db:migrate   # Apply database migrations
@@ -129,6 +143,7 @@ npm run db:seed      # Seed database with sample data
 ```
 
 ### 🧪 **Testing**
+
 ```bash
 npm run test         # Run unit tests
 npm run test:watch   # Run tests in watch mode
@@ -138,6 +153,7 @@ npm run test:e2e:ui  # Run E2E tests with UI
 ```
 
 ### 💅 **Code Quality**
+
 ```bash
 npm run lint         # Run ESLint
 npm run lint:fix     # Fix ESLint issues automatically
@@ -160,12 +176,14 @@ npm run docker:test  # Run test container (Linux/Mac)
 ``` -->
 
 ### 📚 **Storybook**
+
 ```bash
 npm run storybook       # Start Storybook dev server
 npm run build-storybook # Build Storybook for production
 ```
 
 ### 📊 **Analysis**
+
 ```bash
 npm run analyze      # Analyze bundle size
 ```
@@ -195,17 +213,21 @@ npm run analyze      # Analyze bundle size
 ## 🔧 Configuration
 
 ### Environment Variables
+
 Copy `.env.example` to `.env` and configure:
+
 - Database connection
 - Optional: Sentry, PostHog, Stripe, etc.
 
 ### Database Setup
+
 1. Set your `DATABASE_URL` in `.env`
 2. Run migrations: `npm run db:migrate`
 3. Optional: Seed data: `npm run db:seed`
 
 ### Authentication
-- Better Auth 
+
+- Better Auth
 
 ## 🚀 Deployment
 
@@ -219,6 +241,7 @@ npm run docker:prod
 ``` -->
 
 ### Vercel Deployment
+
 1. Connect your repository to Vercel
 2. Set environment variables in Vercel dashboard
 3. Deploy automatically on push to main branch
@@ -241,6 +264,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
 - [shadcn/ui](https://ui.shadcn.com/) - Beautiful UI components
 - [Drizzle ORM](https://orm.drizzle.team/) - TypeScript ORM
+
 ---
-
-

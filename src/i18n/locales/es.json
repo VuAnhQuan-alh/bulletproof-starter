@@ -1,0 +1,55 @@
+{
+  "hero": {
+    "title": "Plantilla de boilerplate NextJS"
+  },
+  "nav": {
+    "features": "Características",
+    "docs": "Docs",
+    "examples": "Ejemplos"
+  },
+  "announcement": "Ahora con soporte Next.js 15 & React 19",
+  "mainHeading": {
+    "part1": "Listo para producción",
+    "part2": "pila de desarrollo"
+  },
+  "subtitle": "Un boilerplate Next.js completo con autenticación, integración de base de datos, pruebas y herramientas modernas. Todo lo que necesitas para lanzar tu próximo proyecto sin los problemas de configuración.",
+  "cta": {
+    "startBuilding": "Comenzar a construir gratis",
+    "viewDocs": "Ver documentación"
+  },
+  "featureHighlight": "Experiencia de desarrollador primero. Ahorra semanas de tiempo de configuración con características listas para usar.",
+  "section": {
+    "title": "Todo lo que necesitas para construir aplicaciones web modernas",
+    "description": "Salta la configuración del boilerplate y enfócate en construir tu producto. Este starter incluye todas las herramientas y patrones que necesitas para aplicaciones listas para producción."
+  },
+  "features": {
+    "auth": {
+      "title": "Autenticación Lista",
+      "description": "Sistema de auth completo con integración better auth. Inicios de sesión sociales,"
+    },
+    "database": {
+      "title": "Base de Datos Type-Safe",
+      "description": "DrizzleORM con soporte PostgreSQL. Consultas type-safe, migraciones, y un hermoso estudio de base de datos para desarrollo."
+    },
+    "testing": {
+      "title": "Suite de Pruebas",
+      "description": "Pruebas completas con Vitest para pruebas unitarias y Playwright para E2E. Reportes de cobertura y configuraciones CI/CD listas."
+    },
+    "ui": {
+      "title": "UI Hermosa",
+      "description": "Componentes Shadcn/ui con Tailwind CSS. Soporte de modo oscuro, diseño responsive, y componentes accesibles por defecto."
+    },
+    "devTools": {
+      "title": "Herramientas de Desarrollo",
+      "description": "ESLint, Prettier, hooks git Husky, modo estricto TypeScript, y configuraciones VS Code para la mejor experiencia de desarrollo."
+    },
+    "performance": {
+      "title": "Rendimiento Optimizado",
+      "description": "Construido con Next.js 15 App Router, Server Components, y técnicas de optimización modernas para rendimiento ultra-rápido."
+    }
+  },
+  "bottomCta": {
+    "text": "¿Listo para comenzar a construir?",
+    "button": "Comenzar ahora"
+  }
+}

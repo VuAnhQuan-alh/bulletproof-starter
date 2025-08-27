@@ -1,4 +1,5 @@
 import { ThemeToggle } from '@/components/theme-toggle'
+import { LanguageSwitcher } from '@/components/language-switcher'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { ArrowRight, Code2, Database, Palette, Shield, Sparkles, TestTube, Zap } from 'lucide-react'
@@ -6,7 +7,13 @@ import { getTranslations } from 'next-intl/server'
 
 export default async function HomePage() {
   const t = await getTranslations('hero')
-  console.log('page: title', t('title'))
+  const tNav = await getTranslations('nav')
+  const tMain = await getTranslations('mainHeading')
+  const tCta = await getTranslations('cta')
+  const tSection = await getTranslations('section')
+  const tFeatures = await getTranslations('features')
+  const tBottomCta = await getTranslations('bottomCta')
+  const tAnnouncement = await getTranslations()
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/30 to-indigo-50/50 dark:from-slate-950 dark:via-blue-950/30 dark:to-indigo-950/50">
@@ -27,23 +34,24 @@ export default async function HomePage() {
                 href="#features"
                 className="text-sm font-medium text-slate-600 transition-colors hover:text-slate-900 dark:text-slate-400 dark:hover:text-white"
               >
-                Features
+                {tNav('features')}
               </a>
               <a
                 href="#docs"
                 className="text-sm font-medium text-slate-600 transition-colors hover:text-slate-900 dark:text-slate-400 dark:hover:text-white"
               >
-                Docs
+                {tNav('docs')}
               </a>
               <a
                 href="#examples"
                 className="text-sm font-medium text-slate-600 transition-colors hover:text-slate-900 dark:text-slate-400 dark:hover:text-white"
               >
-                Examples
+                {tNav('examples')}
               </a>
             </nav>
           </div>
           <div className="flex items-center space-x-4">
+            <LanguageSwitcher />
             <ThemeToggle />
             {/* <SignedIn>
               <UserButton />
@@ -77,7 +85,7 @@ export default async function HomePage() {
                 className="group cursor-pointer border border-slate-200/50 bg-slate-100/50 px-4 py-2 text-sm font-medium text-slate-700 transition-all duration-200 hover:bg-slate-200/50 dark:border-slate-800/50 dark:bg-slate-800/50 dark:text-slate-300 dark:hover:bg-slate-700/50"
               >
                 <Sparkles className="mr-2 h-3 w-3" />
-                Now with Next.js 15 & React 19 support
+                {tAnnouncement('announcement')}
                 <ArrowRight className="ml-2 h-3 w-3 transition-transform group-hover:translate-x-0.5" />
               </Badge>
             </div>
@@ -85,19 +93,17 @@ export default async function HomePage() {
             {/* Main Heading */}
             <h1 className="mb-6 text-5xl font-bold tracking-tight sm:text-6xl lg:text-7xl">
               <span className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 bg-clip-text text-transparent dark:from-white dark:via-slate-100 dark:to-white">
-                Production-ready
+                {tMain('part1')}
               </span>
               <br />
               <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
-                development stack
+                {tMain('part2')}
               </span>
             </h1>
 
             {/* Subtitle */}
             <p className="mx-auto mb-12 max-w-3xl text-xl leading-relaxed text-slate-600 dark:text-slate-400">
-              A comprehensive Next.js boilerplate with authentication, database integration,
-              testing, and modern tooling. Everything you need to ship your next project without the
-              setup hassle.
+              {tAnnouncement('subtitle')}
             </p>
 
             {/* CTA Buttons */}
@@ -106,14 +112,14 @@ export default async function HomePage() {
                 size="lg"
                 className="bg-gradient-to-r from-blue-600 to-indigo-600 px-8 py-3 text-base font-medium text-white shadow-lg transition-all duration-200 hover:from-blue-700 hover:to-indigo-700 hover:shadow-xl"
               >
-                Start building for free
+                {tCta('startBuilding')}
               </Button>
               <Button
                 variant="outline"
                 size="lg"
                 className="group border-slate-300 bg-transparent px-8 py-3 text-base font-medium transition-all duration-200 hover:bg-slate-50 dark:border-slate-700 dark:hover:bg-slate-800"
               >
-                View documentation
+                {tCta('viewDocs')}
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-0.5" />
               </Button>
             </div>
@@ -121,7 +127,7 @@ export default async function HomePage() {
             {/* Feature Highlight */}
             <div className="flex items-center justify-center text-sm text-slate-500 dark:text-slate-400">
               <Zap className="mr-2 h-4 w-4 text-green-500" />
-              Developer experience first. Save weeks of setup time with ready-made features.
+              {tAnnouncement('featureHighlight')}
             </div>
           </div>
         </div>
@@ -135,12 +141,11 @@ export default async function HomePage() {
             <div className="mb-16 text-center">
               <h2 className="mb-4 text-3xl font-bold tracking-tight sm:text-4xl">
                 <span className="bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent dark:from-white dark:to-slate-300">
-                  Everything you need to build modern web apps
+                  {tSection('title')}
                 </span>
               </h2>
               <p className="mx-auto max-w-2xl text-lg text-slate-600 dark:text-slate-400">
-                Skip the boilerplate setup and focus on building your product. This starter includes
-                all the tools and patterns you need for production-ready applications.
+                {tSection('description')}
               </p>
             </div>
 
@@ -154,10 +159,10 @@ export default async function HomePage() {
                     <Shield className="h-6 w-6 text-white" />
                   </div>
                   <h3 className="mb-3 text-xl font-semibold text-slate-900 dark:text-white">
-                    Authentication Ready
+                    {tFeatures('auth.title')}
                   </h3>
                   <p className="text-slate-600 dark:text-slate-400">
-                    Complete auth system with better auth integration. Social logins,
+                    {tFeatures('auth.description')}
                   </p>
                 </div>
               </div>
@@ -170,11 +175,10 @@ export default async function HomePage() {
                     <Database className="h-6 w-6 text-white" />
                   </div>
                   <h3 className="mb-3 text-xl font-semibold text-slate-900 dark:text-white">
-                    Type-Safe Database
+                    {tFeatures('database.title')}
                   </h3>
                   <p className="text-slate-600 dark:text-slate-400">
-                    DrizzleORM with PostgreSQL support. Type-safe queries, migrations, and a
-                    beautiful database studio for development.
+                    {tFeatures('database.description')}
                   </p>
                 </div>
               </div>
@@ -187,11 +191,10 @@ export default async function HomePage() {
                     <TestTube className="h-6 w-6 text-white" />
                   </div>
                   <h3 className="mb-3 text-xl font-semibold text-slate-900 dark:text-white">
-                    Testing Suite
+                    {tFeatures('testing.title')}
                   </h3>
                   <p className="text-slate-600 dark:text-slate-400">
-                    Comprehensive testing with Vitest for unit tests and Playwright for E2E.
-                    Coverage reports and CI/CD ready configurations.
+                    {tFeatures('testing.description')}
                   </p>
                 </div>
               </div>
@@ -204,11 +207,10 @@ export default async function HomePage() {
                     <Palette className="h-6 w-6 text-white" />
                   </div>
                   <h3 className="mb-3 text-xl font-semibold text-slate-900 dark:text-white">
-                    Beautiful UI
+                    {tFeatures('ui.title')}
                   </h3>
                   <p className="text-slate-600 dark:text-slate-400">
-                    Shadcn/ui components with Tailwind CSS. Dark mode support, responsive design,
-                    and accessible components by default.
+                    {tFeatures('ui.description')}
                   </p>
                 </div>
               </div>
@@ -221,11 +223,10 @@ export default async function HomePage() {
                     <Code2 className="h-6 w-6 text-white" />
                   </div>
                   <h3 className="mb-3 text-xl font-semibold text-slate-900 dark:text-white">
-                    Developer Tools
+                    {tFeatures('devTools.title')}
                   </h3>
                   <p className="text-slate-600 dark:text-slate-400">
-                    ESLint, Prettier, Husky git hooks, TypeScript strict mode, and VS Code
-                    configurations for the best development experience.
+                    {tFeatures('devTools.description')}
                   </p>
                 </div>
               </div>
@@ -238,11 +239,10 @@ export default async function HomePage() {
                     <Zap className="h-6 w-6 text-white" />
                   </div>
                   <h3 className="mb-3 text-xl font-semibold text-slate-900 dark:text-white">
-                    Optimized Performance
+                    {tFeatures('performance.title')}
                   </h3>
                   <p className="text-slate-600 dark:text-slate-400">
-                    Built with Next.js 15 App Router, Server Components, and modern optimization
-                    techniques for lightning-fast performance.
+                    {tFeatures('performance.description')}
                   </p>
                 </div>
               </div>
@@ -252,13 +252,13 @@ export default async function HomePage() {
             <div className="mt-16 text-center">
               <div className="inline-flex items-center rounded-full border border-slate-200/50 bg-white/50 px-6 py-3 backdrop-blur-sm dark:border-slate-800/50 dark:bg-slate-900/50">
                 <span className="mr-3 text-sm font-medium text-slate-600 dark:text-slate-400">
-                  Ready to start building?
+                  {tBottomCta('text')}
                 </span>
                 <Button
                   size="sm"
                   className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700"
                 >
-                  Get started now
+                  {tBottomCta('button')}
                   <ArrowRight className="ml-2 h-3 w-3" />
                 </Button>
               </div>

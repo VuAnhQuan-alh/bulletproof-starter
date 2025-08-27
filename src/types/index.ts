@@ -1,4 +1,4 @@
-import type React from "react"
+import type React from 'react'
 // Global type definitions for the application
 
 export interface User {
@@ -21,7 +21,7 @@ export interface PaginationParams {
   page: number
   limit: number
   sortBy?: string
-  sortOrder?: "asc" | "desc"
+  sortOrder?: 'asc' | 'desc'
 }
 
 export interface PaginatedResponse<T> extends ApiResponse<T[]> {
@@ -41,7 +41,7 @@ export interface SEOProps {
   keywords?: string[]
   image?: string
   url?: string
-  type?: "website" | "article" | "product"
+  type?: 'website' | 'article' | 'product'
 }
 
 export interface NavItem {
@@ -72,7 +72,7 @@ export interface FormState {
 }
 
 // Theme types
-export type Theme = "light" | "dark" | "system"
+export type Theme = 'light' | 'dark' | 'system'
 
 // Database types
 export interface BaseEntity {

@@ -3,11 +3,13 @@ module.exports = {
   extends: [
     'next/core-web-vitals',
     'prettier',
-    '@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:import/recommended',
+    'plugin:import/typescript',
     'eslint:recommended',
   ],
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint', 'import/recommended', 'storybook/recommended'],
+  plugins: ['@typescript-eslint', 'import'],
   rules: {
     '@typescript-eslint/no-unused-vars': 'error',
     '@typescript-eslint/no-explicit-any': 'warn',

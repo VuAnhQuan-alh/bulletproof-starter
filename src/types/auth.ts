@@ -1,4 +1,4 @@
-import type React from "react"
+import type React from 'react'
 // Authentication related types
 
 export interface AuthUser {
