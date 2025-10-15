@@ -48,8 +48,86 @@
       "description": "Next.js 15 App Router, Server Components এবং আল্ট্রা-ফাস্ট পারফরম্যান্সের জন্য আধুনিক অপটিমাইজেশন টেকনিকের সাথে তৈরি।"
     }
   },
+  "authPages": {
+    "signIn": {
+      "title": "Sign In",
+      "subtitle": "Use your email to sign in",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Sign In",
+      "registerLink": "Don't have an account? Sign up"
+    },
+    "signUp": {
+      "title": "Create Account",
+      "subtitle": "Start your journey",
+      "name": "Full name",
+      "age": "Age",
+      "email": "Email",
+      "password": "Password",
+      "confirmPassword": "Confirm password",
+      "terms": "I accept the terms",
+      "submit": "Sign Up",
+      "loginLink": "Already have an account? Sign in"
+    },
+    "forgot": {
+      "title": "Forgot Password",
+      "subtitle": "We will send a reset link",
+      "email": "Email",
+      "submit": "Send link"
+    },
+    "reset": {
+      "title": "Reset Password",
+      "subtitle": "Enter your new password",
+      "password": "New password",
+      "confirmPassword": "Confirm password",
+      "submit": "Update password"
+    },
+    "verify": {
+      "title": "Verify Email",
+      "processing": "Processing verification…",
+      "invalid": "Invalid or missing token"
+    }
+  },
   "bottomCta": {
     "text": "নির্মাণ শুরু করতে প্রস্তুত?",
     "button": "এখনই শুরু করুন"
+  },
+  "pages": {
+    "dashboard": {
+      "title": "ড্যাশবোর্ড",
+      "description": "আপনার প্রজেক্টের ওভারভিউ এবং গুরুত্বপূর্ণ অ্যাকশনে দ্রুত প্রবেশ।"
+    },
+    "profile": {
+      "title": "প্রোফাইল",
+      "description": "আপনার ব্যক্তিগত তথ্য ও অ্যাকাউন্ট ডিটেইলস ম্যানেজ করুন।"
+    },
+    "settings": {
+      "title": "সেটিংস",
+      "description": "পছন্দসমূহ এবং অ্যাপ্লিকেশন অপশন কনফিগার করুন।"
+    },
+    "privacy": {
+      "title": "গোপনীয়তা নীতি",
+      "description": "আমরা কীভাবে আপনার ডেটা সংগ্রহ, ব্যবহার এবং সুরক্ষিত করি জানুন।"
+    },
+    "terms": {
+      "title": "সেবার শর্তাবলী",
+      "description": "এই সেবা ব্যবহারের শর্তাবলী ও নিয়ম পড়ুন।"
+    },
+    "contact": {
+      "title": "যোগাযোগ",
+      "description": "সাপোর্ট বা প্রশ্নের জন্য আমাদের টিমের সাথে যোগাযোগ করুন।"
+    },
+    "about": {
+      "title": "পরিচিতি",
+      "description": "এই প্রজেক্ট ও আমাদের লক্ষ্য সম্পর্কে আরও জানুন।"
+    },
+    "blog": {
+      "title": "ব্লগ",
+      "description": "আমাদের টিমের আর্টিকেল, আপডেট ও গাইড।"
+    },
+    "docs": {
+      "title": "ডকুমেন্টেশন",
+      "description": "দ্রুত নির্মাণে সাহায্যের জন্য গাইড ও রেফারেন্স।"
+    }
   }
 }

@@ -8,6 +8,7 @@ import '../../styles/globals.css'
 import { rootMetadata } from '#/config/root-metadata'
 import { routing } from '@/i18n/routing'
 import { hasLocale } from 'next-intl'
+import { setRequestLocale, getMessages } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import { RootWrapper } from './root-wrapper'
 
@@ -24,11 +25,18 @@ export default async function RootLayout({
   if (!hasLocale(routing.locales, locale)) {
     notFound()
   }
+  // Ensure the current request is associated with this locale
+  setRequestLocale(locale)
+
+  // Load translation messages for the active locale
+  const messages = await getMessages()
 
   return (
     <html lang={locale} suppressHydrationWarning>
       <body className={inter.className}>
-        <RootWrapper locale={locale}>{children}</RootWrapper>
+        <RootWrapper locale={locale} messages={messages}>
+          {children}
+        </RootWrapper>
         <Toaster />
       </body>
     </html>

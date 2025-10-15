@@ -48,8 +48,86 @@
       "description": "Construit avec Next.js 15 App Router, Server Components, et techniques d'optimisation modernes pour des performances ultra-rapides."
     }
   },
+  "authPages": {
+    "signIn": {
+      "title": "Se connecter",
+      "subtitle": "Utilisez votre email pour vous connecter",
+      "email": "Email",
+      "password": "Mot de passe",
+      "submit": "Se connecter",
+      "registerLink": "Pas de compte ? Inscrivez-vous"
+    },
+    "signUp": {
+      "title": "Créer un compte",
+      "subtitle": "Commencez votre parcours",
+      "name": "Nom complet",
+      "age": "Âge",
+      "email": "Email",
+      "password": "Mot de passe",
+      "confirmPassword": "Confirmez le mot de passe",
+      "terms": "J'accepte les conditions",
+      "submit": "S'inscrire",
+      "loginLink": "Déjà un compte ? Connectez-vous"
+    },
+    "forgot": {
+      "title": "Mot de passe oublié",
+      "subtitle": "Nous enverrons un lien de réinitialisation",
+      "email": "Email",
+      "submit": "Envoyer le lien"
+    },
+    "reset": {
+      "title": "Réinitialiser le mot de passe",
+      "subtitle": "Entrez votre nouveau mot de passe",
+      "password": "Nouveau mot de passe",
+      "confirmPassword": "Confirmez le mot de passe",
+      "submit": "Mettre à jour le mot de passe"
+    },
+    "verify": {
+      "title": "Vérifier l'email",
+      "processing": "Traitement de la vérification…",
+      "invalid": "Jeton invalide ou manquant"
+    }
+  },
   "bottomCta": {
     "text": "Prêt à commencer la construction ?",
     "button": "Commencer maintenant"
+  },
+  "pages": {
+    "dashboard": {
+      "title": "Tableau de bord",
+      "description": "Vue d’ensemble du projet et accès rapide aux actions clés."
+    },
+    "profile": {
+      "title": "Profil",
+      "description": "Gérez vos informations personnelles et les détails du compte."
+    },
+    "settings": {
+      "title": "Paramètres",
+      "description": "Configurez vos préférences et les options de l’application."
+    },
+    "privacy": {
+      "title": "Politique de confidentialité",
+      "description": "Découvrez comment nous collectons, utilisons et protégeons vos données."
+    },
+    "terms": {
+      "title": "Conditions d’utilisation",
+      "description": "Lisez les termes et conditions d’utilisation du service."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Contactez notre équipe pour du support ou des questions."
+    },
+    "about": {
+      "title": "À propos",
+      "description": "En savoir plus sur ce projet et notre mission."
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "Articles, mises à jour et guides de notre équipe."
+    },
+    "docs": {
+      "title": "Documentation",
+      "description": "Guides et références pour vous aider à construire rapidement."
+    }
   }
 }

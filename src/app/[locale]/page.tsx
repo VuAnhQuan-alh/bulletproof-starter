@@ -2,6 +2,7 @@ import { ThemeToggle } from '@/components/theme-toggle'
 import { LanguageSwitcher } from '@/components/language-switcher'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
+import { Link } from '@/i18n/navigation'
 import { ArrowRight, Code2, Database, Palette, Shield, Sparkles, TestTube, Zap } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
 
@@ -53,20 +54,12 @@ export default async function HomePage() {
           <div className="flex items-center space-x-4">
             <LanguageSwitcher />
             <ThemeToggle />
-            {/* <SignedIn>
-              <UserButton />
-            </SignedIn>
-            <SignedOut>
-              <Button variant="outline" size="sm">
-                <SignInButton>Sign in</SignInButton>
-              </Button>
-              <Button
-                size="sm"
-                className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700"
-              >
-                Get Started
-              </Button>
-            </SignedOut> */}
+            <Button asChild variant="outline" size="sm">
+              <Link href="/sign-in">Đăng nhập</Link>
+            </Button>
+            <Button asChild size="sm" className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700">
+              <Link href="/sign-up">Đăng ký</Link>
+            </Button>
           </div>
         </div>
       </header>

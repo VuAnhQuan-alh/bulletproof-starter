@@ -48,8 +48,86 @@
       "description": "Construido con Next.js 15 App Router, Server Components, y técnicas de optimización modernas para rendimiento ultra-rápido."
     }
   },
+  "authPages": {
+    "signIn": {
+      "title": "Iniciar sesión",
+      "subtitle": "Usa tu email para iniciar",
+      "email": "Email",
+      "password": "Contraseña",
+      "submit": "Iniciar sesión",
+      "registerLink": "¿No tienes cuenta? Regístrate"
+    },
+    "signUp": {
+      "title": "Crear cuenta",
+      "subtitle": "Comienza tu viaje",
+      "name": "Nombre completo",
+      "age": "Edad",
+      "email": "Email",
+      "password": "Contraseña",
+      "confirmPassword": "Confirmar contraseña",
+      "terms": "Acepto los términos",
+      "submit": "Registrarse",
+      "loginLink": "¿Ya tienes cuenta? Inicia sesión"
+    },
+    "forgot": {
+      "title": "Olvidé mi contraseña",
+      "subtitle": "Enviaremos un enlace de restablecimiento",
+      "email": "Email",
+      "submit": "Enviar enlace"
+    },
+    "reset": {
+      "title": "Restablecer contraseña",
+      "subtitle": "Ingresa tu nueva contraseña",
+      "password": "Nueva contraseña",
+      "confirmPassword": "Confirmar contraseña",
+      "submit": "Actualizar contraseña"
+    },
+    "verify": {
+      "title": "Verificar email",
+      "processing": "Procesando verificación…",
+      "invalid": "Token inválido o faltante"
+    }
+  },
   "bottomCta": {
     "text": "¿Listo para comenzar a construir?",
     "button": "Comenzar ahora"
+  },
+  "pages": {
+    "dashboard": {
+      "title": "Panel",
+      "description": "Resumen de tu proyecto y acceso rápido a acciones clave."
+    },
+    "profile": {
+      "title": "Perfil",
+      "description": "Gestiona tu información personal y los datos de tu cuenta."
+    },
+    "settings": {
+      "title": "Configuración",
+      "description": "Configura tus preferencias y opciones de la aplicación."
+    },
+    "privacy": {
+      "title": "Política de privacidad",
+      "description": "Conoce cómo recopilamos, usamos y protegemos tus datos."
+    },
+    "terms": {
+      "title": "Términos de servicio",
+      "description": "Lee los términos y condiciones de uso del servicio."
+    },
+    "contact": {
+      "title": "Contacto",
+      "description": "Ponte en contacto con nuestro equipo para soporte o dudas."
+    },
+    "about": {
+      "title": "Acerca de",
+      "description": "Conoce más sobre este proyecto y nuestra misión."
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "Artículos, actualizaciones y guías de nuestro equipo."
+    },
+    "docs": {
+      "title": "Documentación",
+      "description": "Guías y referencias para ayudarte a construir rápido."
+    }
   }
 }

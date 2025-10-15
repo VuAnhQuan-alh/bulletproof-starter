@@ -48,8 +48,86 @@
       "description": "Được xây dựng với Next.js 15 App Router, Server Components và kỹ thuật tối ưu hóa hiện đại cho hiệu suất siêu nhanh."
     }
   },
+  "authPages": {
+    "signIn": {
+      "title": "Đăng nhập",
+      "subtitle": "Sử dụng email để đăng nhập",
+      "email": "Email",
+      "password": "Mật khẩu",
+      "submit": "Đăng nhập",
+      "registerLink": "Chưa có tài khoản? Đăng ký"
+    },
+    "signUp": {
+      "title": "Tạo tài khoản",
+      "subtitle": "Bắt đầu hành trình của bạn",
+      "name": "Họ và tên",
+      "age": "Tuổi",
+      "email": "Email",
+      "password": "Mật khẩu",
+      "confirmPassword": "Nhập lại mật khẩu",
+      "terms": "Tôi đồng ý với điều khoản",
+      "submit": "Đăng ký",
+      "loginLink": "Đã có tài khoản? Đăng nhập"
+    },
+    "forgot": {
+      "title": "Quên mật khẩu",
+      "subtitle": "Chúng tôi sẽ gửi liên kết đặt lại",
+      "email": "Email",
+      "submit": "Gửi liên kết"
+    },
+    "reset": {
+      "title": "Đặt lại mật khẩu",
+      "subtitle": "Nhập mật khẩu mới của bạn",
+      "password": "Mật khẩu mới",
+      "confirmPassword": "Nhập lại mật khẩu",
+      "submit": "Cập nhật mật khẩu"
+    },
+    "verify": {
+      "title": "Xác minh email",
+      "processing": "Đang xử lý xác minh…",
+      "invalid": "Token không hợp lệ hoặc thiếu"
+    }
+  },
   "bottomCta": {
     "text": "Sẵn sàng bắt đầu xây dựng?",
     "button": "Bắt đầu ngay bây giờ"
+  },
+  "pages": {
+    "dashboard": {
+      "title": "Bảng điều khiển",
+      "description": "Tổng quan dự án và truy cập nhanh các thao tác quan trọng."
+    },
+    "profile": {
+      "title": "Hồ sơ",
+      "description": "Quản lý thông tin cá nhân và tài khoản."
+    },
+    "settings": {
+      "title": "Cài đặt",
+      "description": "Tùy chỉnh các thiết lập và tùy chọn ứng dụng."
+    },
+    "privacy": {
+      "title": "Chính sách quyền riêng tư",
+      "description": "Tìm hiểu cách chúng tôi thu thập, sử dụng và bảo vệ dữ liệu."
+    },
+    "terms": {
+      "title": "Điều khoản sử dụng",
+      "description": "Đọc điều khoản và điều kiện khi sử dụng dịch vụ."
+    },
+    "contact": {
+      "title": "Liên hệ",
+      "description": "Kết nối với đội ngũ để được hỗ trợ hoặc đặt câu hỏi."
+    },
+    "about": {
+      "title": "Giới thiệu",
+      "description": "Tìm hiểu thêm về dự án và sứ mệnh của chúng tôi."
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "Bài viết, cập nhật và hướng dẫn từ đội ngũ."
+    },
+    "docs": {
+      "title": "Tài liệu",
+      "description": "Hướng dẫn và tham khảo giúp bạn xây dựng nhanh chóng."
+    }
   }
 }

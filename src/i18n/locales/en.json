@@ -48,8 +48,86 @@
       "description": "Built with Next.js 15 App Router, Server Components, and modern optimization techniques for lightning-fast performance."
     }
   },
+  "authPages": {
+    "signIn": {
+      "title": "Sign In",
+      "subtitle": "Use your email to sign in",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Sign In",
+      "registerLink": "Don't have an account? Sign up"
+    },
+    "signUp": {
+      "title": "Create Account",
+      "subtitle": "Start your journey",
+      "name": "Full name",
+      "age": "Age",
+      "email": "Email",
+      "password": "Password",
+      "confirmPassword": "Confirm password",
+      "terms": "I accept the terms",
+      "submit": "Sign Up",
+      "loginLink": "Already have an account? Sign in"
+    },
+    "forgot": {
+      "title": "Forgot Password",
+      "subtitle": "We will send a reset link",
+      "email": "Email",
+      "submit": "Send link"
+    },
+    "reset": {
+      "title": "Reset Password",
+      "subtitle": "Enter your new password",
+      "password": "New password",
+      "confirmPassword": "Confirm password",
+      "submit": "Update password"
+    },
+    "verify": {
+      "title": "Verify Email",
+      "processing": "Processing verification…",
+      "invalid": "Invalid or missing token"
+    }
+  },
   "bottomCta": {
     "text": "Ready to start building?",
     "button": "Get started now"
+  },
+  "pages": {
+    "dashboard": {
+      "title": "Dashboard",
+      "description": "Overview of your project and quick access to key actions."
+    },
+    "profile": {
+      "title": "Profile",
+      "description": "Manage your personal information and account details."
+    },
+    "settings": {
+      "title": "Settings",
+      "description": "Configure preferences and application options."
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "description": "Learn how we collect, use, and protect your data."
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "description": "Read the terms and conditions for using this service."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Get in touch with our team for support or questions."
+    },
+    "about": {
+      "title": "About",
+      "description": "Learn more about this project and our mission."
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "Articles, updates, and guides from our team."
+    },
+    "docs": {
+      "title": "Documentation",
+      "description": "Guides and references to help you build quickly."
+    }
   }
 }
